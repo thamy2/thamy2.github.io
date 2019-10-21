@@ -131,6 +131,7 @@ function handlePointClick(point){
     } 
 }
 
+
 function clear(){
     ctx.fillStyle = '#f5f5f5';
     ctx.beginPath();
