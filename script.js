@@ -43,20 +43,19 @@ function prepare(){
         possiblePoints.push(i + 1);
         actualPoints.push(i + 1);
         
-        //Randomise order
+
         possiblePoints.sort(function(){
             return 0.5 - Math.random()
         });
     }
     
-    //Arrange dots in shapes/patterns
+
     pattern = patterns[lvl - 1];
     itemsAdded = 0;
     
-    //For each row
+
     for (i = 0; i < pattern.length; i++) {
         rowItems = pattern[i];
-        //For each item in each row
         for (var j = 0; j < rowItems; j++) {
             pointx = (Math.floor(width / 2) + 30) - 80 * j;
             pointy = (Math.floor(height / 2) + 60) - 80 * i;        
@@ -79,27 +78,25 @@ function hidetext(){
 
 function drawPoints(drawText){
     for (var i = 0; i < points.length; i++) {
-        ctx.fillStyle = '#000000';
+        ctx.fillStyle = '#d3d3d3';
         ctx.beginPath();
         ctx.arc(points[i].x, points[i].y, 30, 0, Math.PI * 2, true);
         ctx.closePath();
         ctx.fill();
-        ctx.lineWidth = 6;
-        ctx.strokeStyle = 'rgba(0,0,0,0.8)';
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = 'rgba(255,105,180)';
         ctx.stroke();
         
         if (drawText) {
-            //Draw text
             ctx.fillStyle = '#FFFFFF';
             ctx.font = 'bold 20px helvetica';
-                                    //Offsets
             ctx.fillText(points[i].value, points[i].x - 6, points[i].y + 6);
         }
     }
 }
 
 function MouseMove(e){
-    if (e.layerX || e.layerX == 0) { // Firefox
+    if (e.layerX || e.layerX == 0) {
         mouse.x = e.layerX - c.offsetLeft;
         mouse.y = e.layerY - c.offsetTop;
     }
@@ -116,9 +113,6 @@ function handlePointClick(point){
         actualPoints.splice(0, 1);
         ctx.fillStyle = '#FFFFFF';
         ctx.font = 'bold 20px helvetica';
-                                    
-                                    //Clean up scappy dupplicate code
-                                    //Offsets
         ctx.fillText(point.value, point.x - 6, point.y + 6);
         
         if (actualPoints.length == 0) {
