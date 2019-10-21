@@ -92,7 +92,7 @@ function drawPoints(drawText){
             //Draw text
             ctx.fillStyle = '#FFFFFF';
             ctx.font = 'bold 20px helvetica';
-          							//Offsets
+                                    //Offsets
             ctx.fillText(points[i].value, points[i].x - 6, points[i].y + 6);
         }
     }
@@ -116,19 +116,19 @@ function handlePointClick(point){
         actualPoints.splice(0, 1);
         ctx.fillStyle = '#FFFFFF';
         ctx.font = 'bold 20px helvetica';
-									
-									//Clean up scappy dupplicate code
-									//Offsets
+                                    
+                                    //Clean up scappy dupplicate code
+                                    //Offsets
         ctx.fillText(point.value, point.x - 6, point.y + 6);
         
         if (actualPoints.length == 0) {
             clear();
-			if (lvl < patterns.length){
-				lvl = lvl + 1;
-			}
+            if (lvl < patterns.length){
+                lvl = lvl + 1;
+            }
             
             prepare();
-			return;
+            return;
         }
     } else {
         clear();
@@ -157,7 +157,7 @@ function MouseUp(e){
                 
                 if (sqrDist < 30) {
                     handlePointClick(points[i]);
-					return;
+                    return;
                 }
             }        
         }
