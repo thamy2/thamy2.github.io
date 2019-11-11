@@ -1,0 +1,45 @@
+
+[
+	{
+		"Venue" : "Big Hall",
+		"artist": "Carimi",
+		"genre": "Kompa",
+		"city": "Brooklyn NY",
+		"date": "2019-12-31",
+		"event":"New Year Celebration",
+		"price":"45",
+		"currency": "USD"
+	},
+	{
+		"Venue" : "Little Cafe",
+		"artist": "T-mickey",
+		"genre": "Kompa",
+		"city": "Brooklyn NY",
+		"date": "2019-11-31",
+		"event":"Haitian Celebration",
+		"menu": "Coffee, latte, croissant, bagel",
+		"price":"45",
+		"currency": "USD"
+	},
+	{
+	    "Venue" : "Smokey Club",
+		"artist": "5-lan",
+		"genre": "Kompa",
+		"city": "Brooklyn NY",
+		"date": "2019-10-04",
+		"event":"New Year Celebration",
+		"price":"45",
+		"currency": "USD"
+	},
+	{
+		"Venue" : "Dance Hall",
+		"artist": "leadpipe, Flipo",
+		"genre": "Soca",
+		"city": "Brooklyn NY",
+		"teacher": "Brooklyn NY",
+		"date": "2019-12-31",
+		"event":"New Year Celebration",
+		"price":"45",
+		"currency": "USD"
+	}
+]
