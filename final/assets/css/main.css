@@ -1,0 +1,94 @@
+body, html{
+    margin:0;
+    padding:0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.top-header {
+    height: 50px;
+    width: 100%;
+    background: #1B065E;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 17;
+}
+
+.header-input {
+    display: flex;
+
+}
+
+.content-container {
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.calendar-container {
+    padding-top: 30px;
+}
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    margin-top: 35px;
+    border-color: #1B065E;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.options-content {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.options-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#loadingDiv{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #666;
+    background-image: url('../img/ajax-loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10000000;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+  }
